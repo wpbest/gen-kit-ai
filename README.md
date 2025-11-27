@@ -54,6 +54,29 @@ CREATE gen-kit-ai/src/app/app.config.ts (318 bytes)
 CREATE gen-kit-ai/src/app/app.routes.ts (80 bytes)  
 CREATE gen-kit-ai/public/favicon.ico (15086 bytes)  
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBOfu0QClB8IjUHgIpVkvOJOOVJ3NM5ZjE",
+  authDomain: "gen-kit-ai.firebaseapp.com",
+  projectId: "gen-kit-ai",
+  storageBucket: "gen-kit-ai.firebasestorage.app",
+  messagingSenderId: "46059514094",
+  appId: "1:46059514094:web:6787dfbe4a4a28ef5dabff"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+## Add Angular Fire Schematic
+```bash
+ng add @angular/fire
+```
+
 ## Development server
 
 To start a local development server, run:
